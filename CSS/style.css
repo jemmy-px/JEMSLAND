@@ -1,11 +1,3 @@
-html {
-	background-image: url("embeds/background.gif");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
 a {
 	color: pink;
 }
