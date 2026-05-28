@@ -1,3 +1,30 @@
+html {
+	background-image: url("embeds/background.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a {
+	color: pink;
+}
+
+body {
+	color: white;
+	font-family: "Happy Monkey";
+}
+
+div {
+	border-radius: 20px;
+}
+
+img {
+	max-width: 50vw;
+	height: auto;
+	object-fit: contain;
+}
+
 .stuff {
 	text-align: center;
 	width: 15vw;
