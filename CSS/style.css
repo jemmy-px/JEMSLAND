@@ -1,47 +1,101 @@
-a{
-	color: pink;
-}
-
-body{
-	color: white;
-	font-family: "Happy Monkey";
-}
-
-.bar{
+.stuff {
+	text-align: center;
+	width: 15vw;
 	position: sticky;
-	top: 0;
-	background-color: rgba(50, 25, 50, 0.5);
-	display: flex;
+	top: 10px;
+	height: max-content;
 }
 
-marquee{
-	margin-bottom: auto;
-	margin-top: auto;
-	width: 80%;
+.side, .nav, .info {
+	background-color: rgba(47, 25, 50, 0.4);
 }
 
-.moosics{
-	width: 20%;
+.side {
+	margin: 5px;
+	display: grid;
 }
 
-.main{
-	position: static;
+.nav {
+	margin: 5px;
+	display: grid;
+	height: auto;
+}
+
+.nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.nav li {
+	text-align: center;
+	align-items: center;
+	font-size: 30px;
 }
 
 .page{
-	margin-top: 5px;
+	padding: 1%;
 	display: flex;
+	position: absolute;
+	left: 10vw;
+	right: 10vw;
+}
+
+.info{
+	margin: 5px;
+	width: 70%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
-.info{
-	margin: 5px;
-	background-color: rgba(50, 25, 50, 0.5);
-	position: static;
-}
-
 ul{
 	text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+	div {
+		flex-direction: column;
+	}
+	
+	.stuff {
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		position: static;
+	}
+	
+	.side {
+		order: 1;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		max-height: 100%;
+		align-items: center;
+	}
+	
+	.nav {
+		align-items: center;
+
+		order: 2;
+		width: 50%;
+		height: auto;
+	}
+	
+	.nav ul{
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.info {
+		order: 3;
+		width: auto;
+	}
+	
+	.page {
+		left: 0%;
+		right: 0%;
+		display: grid;
+	}
+	
+
 }
