@@ -25,7 +25,7 @@ img {
 	height: max-content;
 }
 
-.side, .nav, .info {
+.side, .nav, .content {
 	background-color: rgba(47, 25, 50, 0.4);
 }
 
@@ -48,23 +48,29 @@ img {
 .nav li {
 	text-align: center;
 	align-items: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .page{
-	padding: 1%;
 	display: flex;
 	position: absolute;
 	left: 10vw;
 	right: 10vw;
 }
 
-.info{
+.content{
 	margin: 5px;
 	width: 70%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	height: max-content;
+}
+
+.oc {
+	width: auto;
+	justify-content: center;
+	margin: 5px;
 }
 
 ul{
@@ -88,13 +94,13 @@ ul{
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-		max-height: 100%;
+		min-height: 100%;
+		max-height: 200%;
 		align-items: center;
 	}
 	
 	.nav {
 		align-items: center;
-
 		order: 2;
 		width: 50%;
 		height: auto;
@@ -105,7 +111,7 @@ ul{
 		text-align: center;
 	}
 
-	.info {
+	.content {
 		order: 3;
 		width: auto;
 	}
@@ -115,6 +121,4 @@ ul{
 		right: 0%;
 		display: grid;
 	}
-	
-
 }
