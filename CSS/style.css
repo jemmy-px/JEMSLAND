@@ -1,3 +1,7 @@
+img {
+	content-visibility: auto;
+}
+
 a {
 	color: pink;
 }
